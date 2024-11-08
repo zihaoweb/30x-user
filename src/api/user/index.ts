@@ -7,9 +7,10 @@ import type { IFormData, MemberInfoList } from '@/pages/member/helper';
 import { get, post } from '@/utils/request';
 
 enum URL {
-  signUp = '/bu/pat_app/accounts/signup',
-  loginByCode = '/wx/wx/account/session/', // 登录
-  phonenumber = '/wx/wx/account/phone/', // 获取手机号
+  signUp = '/user/signup',
+  loginByCode = '/user/login/', // 登录
+
+  phonenumber = '/user/phone/', // 获取手机号
   getUserInfoByOpenId = '/bu/pat_app/account-openid/', // 根据openid获取用户信息
   getUserInfoByUnionId = '/bu/pat_app/account-unionid/', // 根据unionid获取用户信息
   addMember = '/bu/pat_app/patients/add2',

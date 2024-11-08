@@ -8,6 +8,7 @@ export function setupRequest() {
   uni.$u.http.setConfig((defaultConfig: HttpRequestConfig) => {
     /* defaultConfig 为默认全局配置 */
     defaultConfig.baseURL = import.meta.env.VITE_APP_BASE_API;
+    defaultConfig.timeout = 60000; // 请求超时时间
     return defaultConfig;
   });
   requestInterceptors();
@@ -17,9 +18,6 @@ export function setupRequest() {
 export function request<T = any>(config: HttpRequestConfig): Promise<T> {
   return new Promise((resolve) => {
     uni.$u.http.request(config).then((res: IResponse) => {
-      // console.log('res', res);
-      // const { result } = res;
-      // console.log(' ==>', result);
       resolve(res as T);
     });
   });
