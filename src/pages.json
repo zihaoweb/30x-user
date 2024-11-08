@@ -1,0 +1,132 @@
+{
+  "easycom": {
+    "custom": {
+      "^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+      "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue",
+      "qiun-data-charts": "@qiun/uni-ucharts/components/qiun-data-charts/qiun-data-charts.vue",
+      "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/user/index",
+      "style": {
+        "navigationBarTitleText": "加载中...",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/user/qrcode",
+      "style": {}
+    },
+    {
+      "path": "pages/other/aboutUs/index",
+      "style": {}
+    },
+    {
+      "path": "pages/other/feedback/index",
+      "style": {}
+    },
+    {
+      "path": "pages/laws/index",
+      "style": {}
+    },
+    {
+      "path": "pages/other/payRedeem/index",
+      "style": {
+        "enablePullDownRefresh": false,
+        "onReachBottomDistance": 100
+      }
+    },
+    {
+      "path": "pages/other/customer/index",
+      "style": {}
+    },
+    {
+      "path": "pages/other/monthlyStatistics/index",
+      "style": {}
+    },
+    {
+      "path": "pages/other/orderSearch/index",
+      "style": {
+        "enablePullDownRefresh": false,
+        "onReachBottomDistance": 100
+      }
+    },
+    {
+      "path": "pages/other/orderSearch/detail",
+      "style": {}
+    },
+    {
+      "path": "pages/edituser/index",
+      "style": {}
+    },
+    {
+      "path": "pages/service/ai/index",
+      "style": {}
+    },
+    {
+      "path": "pages/service/doctor/index",
+      "style": {}
+    },
+    {
+      "path": "pages/service/doctor/useList",
+      "style": {
+        "enablePullDownRefresh": false,
+        "onReachBottomDistance": 100
+      }
+    },
+    {
+      "path": "pages/member/index",
+      "style": {
+        "enablePullDownRefresh": true // 启用下拉刷新
+      }
+    },
+    {
+      "path": "pages/member/addMember",
+      "style": {}
+    },
+    {
+      "path": "pages/member/updateMember",
+      "style": {}
+    },
+    {
+      "path": "pages/member/qrcode",
+      "style": {}
+    },
+    {
+      "path": "pages/follow/index",
+      "style": {}
+    },
+    {
+      "path": "pages/apply/index",
+      "style": {
+        "enablePullDownRefresh": false,
+        "onReachBottomDistance": 100
+      }
+    },
+    {
+      "path": "pages/message/index",
+      "style": {}
+    },
+    {
+      "path": "pages/message/detail",
+      "style": {
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 100
+      }
+    },
+    {
+      "path": "pages/history/index",
+      "style": {}
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  }
+}
